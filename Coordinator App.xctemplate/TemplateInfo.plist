@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Kind</key>
+        <string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+        <key>Identifier</key>
+        <string>com.michaelharrigan.dt.unit.coordinatorApplication</string>
+        <key>Ancestors</key>
+        <array>
+            <string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+        </array>
+        <key>Concrete</key>
+        <true/>
+        <key>Description</key>
+        <string>This template provides a starting point for an application that uses coordinators.</string>
+        <key>CFBundleIdentifier</key>
+        <dict/>
+        <key>SortOrder</key>
+        <integer>1</integer>
+        <key>NameOfInitialFileForEditor</key>
+        <string>ViewController.swift</string>
+        <key>Options</key>
+        <array>
+            <dict>
+                <key>Identifier</key>
+                <string>languageChoice</string>
+                <key>Units</key>
+                <dict>
+                    <key>Objective-C</key>
+                    <dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>ViewController.h:comments</string>
+                            <string>ViewController.h:imports:importCocoa</string>
+                            <string>ViewController.h:interface(___FILEBASENAME___ : UIViewController)</string>
+                            <string>ViewController.m:comments</string>
+                            <string>ViewController.m:imports:importHeader:ViewController.h</string>
+                            <string>ViewController.m:extension</string>
+                            <string>ViewController.m:implementation:methods:viewDidLoad(- (void\)viewDidLoad)</string>
+                            <string>ViewController.m:implementation:methods:viewDidLoad:super</string>
+                            <string>Info.plist:UIMainStoryboardFile</string>
+                            <string>Info.plist:UIApplicationSceneManifest:UISceneStoryboardFile</string>
+                            <string>Base.lproj/Main.storyboard</string>
+                            <string>Base.lproj/Main.storyboard</string>
+                        </array>
+                        <key>Definitions</key>
+                        <dict>
+                            <key>Base.lproj/Main.storyboard</key>
+                            <dict>
+                                <key>Path</key>
+                                <string>Main.storyboard</string>
+                                <key>SortOrder</key>
+                                <integer>98</integer>
+                            </dict>
+                            <key>Info.plist:UIMainStoryboardFile</key>
+                            <string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
+                            &lt;string&gt;Main&lt;/string&gt;
+                        </string>
+                        </dict>
+                    </dict>
+                    <key>Swift</key>
+                    <array>
+                        <dict>
+                            <key>RequiredOptions</key>
+                            <dict>
+                                <key>userInterface</key>
+                                <string>Storyboard</string>
+                            </dict>
+                            <key>Nodes</key>
+                            <array>
+                                <string>ViewController.swift:comments</string>
+                                <string>ViewController.swift:imports:importCocoa</string>
+                                <string>ViewController.swift:implementation(___FILEBASENAME___: UIViewController, Storyboarded)</string>
+                                <string>ViewController.swift:implementation:properties:coordinator</string>
+                                <string>ViewController.swift:implementation:methods:viewDidLoad(override func viewDidLoad(\))</string>
+                                <string>ViewController.swift:implementation:methods:viewDidLoad:super</string>
+                                <string>ViewController.swift:implementation(___FILEBASENAME___: UIViewController, Storyboarded)</string>
+                                <string>Info.plist:UIMainStoryboardFile</string>
+                                <string>Storyboarded.swift</string>
+                                <string>Coordinator.swift</string>
+                                <string>MainCoordinator.swift</string>
+                                <string>Base.lproj/Main.storyboard</string>
+                            </array>
+                            <key>Definitions</key>
+                            <dict>
+                                <key>Base.lproj/Main.storyboard</key>
+                                <dict>
+                                    <key>Path</key>
+                                    <string>Main.storyboard</string>
+                                    <key>SortOrder</key>
+                                    <integer>99</integer>
+                                </dict>
+                                <key>Storyboarded.swift</key>
+                                <dict>
+                                    <key>Path</key>
+                                    <string>Storyboarded.swift</string>
+                                </dict>
+                                <key>Coordinator.swift</key>
+                                <dict>
+                                    <key>Path</key>
+                                    <string>Coordinator.swift</string>
+                                </dict>
+                                <key>MainCoordinator.swift</key>
+                                <dict>
+                                    <key>Path</key>
+                                    <string>MainCoordinator.swift</string>
+                                </dict>
+                                <key>AppDelegate.swift:implementation:properties:window</key>
+                                <string>var window: UIWindow?
+								var coordinator: MainCoordinator?</string>
+                                <key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+                               <string>// Override point for customization after application launch.
+								let navController = UINavigationController()
+								coordinator = MainCoordinator(navigationController: navController)
+								coordinator?.start()
+
+								window = UIWindow(frame: UIScreen.main.bounds)
+								window?.rootViewController = navController
+								window?.makeKeyAndVisible()</string>
+                                <key>ViewController.swift:implementation:properties:coordinator</key>
+                                <string>weak var coordinator: MainCoordinator?</string>
+                            </dict>
+                        </dict>
+                    </array>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
